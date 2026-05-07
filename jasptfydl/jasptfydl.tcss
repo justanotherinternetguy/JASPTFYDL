@@ -1,0 +1,209 @@
+/* ── Global ───────────────────────────────────────────────── */
+Screen {
+    background: #0d1117;
+}
+
+/* ── Header ───────────────────────────────────────────────── */
+#header {
+    height: 3;
+    background: #1DB954;
+    color: #0d1117;
+    content-align: center middle;
+    text-style: bold;
+}
+
+/* ── Input screen ─────────────────────────────────────────── */
+#input-container {
+    align: center middle;
+    height: 1fr;
+}
+
+#input-card {
+    width: 72;
+    height: auto;
+    border: round #1DB954;
+    padding: 2 4;
+    background: #161b22;
+}
+
+#input-title {
+    text-style: bold;
+    color: #1DB954;
+    margin-bottom: 1;
+}
+
+#input-subtitle {
+    color: #8b949e;
+    margin-bottom: 2;
+}
+
+#url-input {
+    border: solid #30363d;
+    background: #0d1117;
+    color: #e6edf3;
+    width: 100%;
+}
+
+#url-input:focus {
+    border: solid #1DB954;
+}
+
+#input-hint {
+    color: #8b949e;
+    margin-top: 1;
+    text-style: italic;
+}
+
+#input-error {
+    color: #f85149;
+    margin-top: 1;
+    display: none;
+}
+
+#input-error.visible {
+    display: block;
+}
+
+/* ── Auth screen ──────────────────────────────────────────── */
+#auth-container {
+    align: center middle;
+    height: 1fr;
+}
+
+#auth-card {
+    width: 72;
+    height: auto;
+    border: round #1DB954;
+    padding: 2 4;
+    background: #161b22;
+}
+
+#auth-title {
+    text-style: bold;
+    color: #1DB954;
+    margin-bottom: 1;
+}
+
+#auth-status {
+    color: #e6edf3;
+    margin-bottom: 1;
+}
+
+#auth-url-label {
+    color: #8b949e;
+    margin-top: 1;
+}
+
+#auth-url {
+    color: #58a6ff;
+    text-style: underline;
+    margin-bottom: 1;
+}
+
+#auth-spinner {
+    color: #1DB954;
+    margin-top: 1;
+}
+
+#auth-error {
+    color: #f85149;
+    display: none;
+    margin-top: 1;
+}
+
+#auth-error.visible {
+    display: block;
+}
+
+/* ── Download screen ──────────────────────────────────────── */
+#dl-header {
+    height: 3;
+    background: #161b22;
+    border-bottom: solid #30363d;
+    padding: 0 2;
+    color: #e6edf3;
+}
+
+#dl-playlist-name {
+    text-style: bold;
+    color: #1DB954;
+}
+
+#track-table {
+    height: 1fr;
+    border: none;
+    background: #0d1117;
+}
+
+DataTable > .datatable--header {
+    background: #161b22;
+    color: #8b949e;
+    text-style: bold;
+}
+
+DataTable > .datatable--cursor {
+    background: #1f2937;
+    color: #e6edf3;
+}
+
+#dl-footer {
+    height: 5;
+    background: #161b22;
+    border-top: solid #30363d;
+    padding: 1 2;
+}
+
+#progress-bar {
+    width: 1fr;
+    margin-bottom: 1;
+}
+
+ProgressBar > .bar--bar {
+    color: #1DB954;
+}
+
+ProgressBar > .bar--complete {
+    color: #1DB954;
+}
+
+#dl-stats {
+    color: #8b949e;
+}
+
+#dl-output {
+    color: #58a6ff;
+}
+
+/* ── Spinner label ────────────────────────────────────────── */
+LoadingIndicator {
+    color: #1DB954;
+}
+
+/* ── CSV picker list ──────────────────────────────────────────────────────── */
+#csv-list {
+    height: auto;
+    max-height: 20;
+    border: solid #30363d;
+    background: #0d1117;
+    margin-top: 1;
+}
+
+#csv-list > ListItem {
+    background: #0d1117;
+    color: #e6edf3;
+    padding: 0 1;
+}
+
+#csv-list > ListItem:hover {
+    background: #1f2937;
+}
+
+#csv-list > ListItem.--highlight {
+    background: #1DB954 20%;
+    color: #e6edf3;
+}
+
+#csv-list > ListItem.--highlight Label {
+    color: #1DB954;
+    text-style: bold;
+}
